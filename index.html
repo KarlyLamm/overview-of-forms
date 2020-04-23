@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+<form action='index.html' method="POST">
+    <h1>Sign Up</h1>
+    <fieldset>
+        <legend><span class='number'>1</span>Your basic information</legend>
+        <label for='name'>Name:</label>
+        <!-- //label element adds focus to for section  -->
+        <input type='text' id='name' name='user_name'>
+        <label for='email'>Email:</label>
+        <input type='email' id='mail' name='user_email'>
+        <label for='password'>Password:</label>
+        <input type='password' id='password' name='user_password'>
+        <label for='telephone'>Phone Number:</label>
+        <input type='telephone' id='telephone' name='user_telephone'>
+
+        <label>Age:</label>
+        <input type='radio' id='under_18' value='under_18' name='user_age'>
+        <label for='under_18' class='light'>Under 18</label><br>
+        <input type='radio' id='over_18' value='over_18' name='user_age'>
+        <label for='over_18' class='light'>18 or Older</label>
+       <!-- //Radio button have name name attribute so you can only pick one -->
+    </fieldset>
+    <legend><span class='number'>2</span>Your Profile</legend>
+    <fieldset>
+        <label for=bio>Brag about yourself:</label>
+        <textarea id='bio' name='user_bio'></textarea>
+
+        <label for='job'>Job Role</label>
+        <select id='job' name='user_job'>
+            <optgroup label='web'>
+                <option value='Frontend_developer'>Front End Developer</option>
+                <option value='php_developer'>PHP Developer</option>
+                <option value='Python developer'>Python Developer</option>
+                <option value='rails'>Rails Developer</option>
+                <option value=web_designer>Web Designer</option>
+                <option value=wordpress_developer>WordPress Developer</option>
+            </optgroup>
+            <optgroup label='mobile'>
+                <option value='ios-Developer'>IOS Developer</option>
+                <option value='mobile_designer'>Mobile Designer</option>
+                <option value='android_developer'>Android Developer</option>
+            </optgroup>
+            <optgroup label='business'>
+                <option value='freelancer'>Freelancer</option>
+                <option value='Business_Owner'>Business Owner</option>
+            </optgroup>
+            </select>
+            <label>Interests</label>
+                <input type='checkbox'id='development'value='interest_development'name='user_interest'>
+                <label class='light' for='development'>Development</label><br>
+
+                <input type='checkbox'id='Design'value='interest_design'name='user_interest'>
+                <label class='light' for='Design'>Design</label><br>
+
+                <input type='checkbox'id='business'value='interest_business'name='user_interest'>
+                <label class='light' for='business'>Business</label>
+    </fieldset>
+    
+    <button type='Submit'>Sign Up</button>
+</form>
+      
+      
+    </body>
+</html>
